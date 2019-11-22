@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Array1D 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("1 Dimensional Array");
+		System.out.println("Enter desired length of Array");
+		Scanner scanlength = new Scanner(System.in);
+		int arrlength = scanlength.nextInt();
+
+		Scanner scanarr = new Scanner(System.in);
+		int a[] = new int[arrlength];
+
+		for(int i=0; i<=(a.length-1); i++)
+		{
+			System.out.print("Enter the marks of student "+i+" :");
+			a[i]=scanarr.nextInt();
+		}
+		System.out.println();
+		for(int i=0; i<=(a.length-1); i++)
+		{
+			System.out.println("Marks of student "+i+" is: " +a[i]);
+		}
+		scanlength.close();
+		scanarr.close();
+	}
+}
